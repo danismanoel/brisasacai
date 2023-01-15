@@ -1,0 +1,444 @@
+body{
+    /* background: black; */
+    color: white;
+    /* background-image: url('./img/fundo6.jpg'); */
+    background: #754ec5;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 26px;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ .nome h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 50px;
+    background: black;
+    margin-top: 10px;
+} 
+
+.historia {
+    display: flex;
+    justify-content: center;
+    /* margin-right: 10%; */
+    float: left;
+   max-width: 90%; 
+   padding: 15px;
+   margin-bottom: -40px;
+}
+
+.historia p{
+    width: 60%;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 10px;
+    /* background: #568e76; */
+    
+}
+
+.galeria {
+    margin: 200px auto;
+    border-radius: 20px;
+    width: 780px;
+    height: 680px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1){
+
+}
+
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4){
+    animation-delay: 15s;
+}
+
+.foto:nth-child(5){
+    animation-delay: 20s;
+}
+
+.foto:nth-child(6){
+    animation-delay: 25s;
+}
+
+.beneficios{
+     /* display: contents;  */
+     position: relative; 
+}
+
+.beneficios h1{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    margin-top: -520px; 
+    margin-bottom: 30px;   
+}
+
+.beneficios img{
+    opacity: 0.3;    
+}
+
+.beneficios p{
+    display: inline-flex;
+    justify-content: center;
+   max-width: 90%; 
+   padding: 15px;
+   margin-top: 35px;
+   margin-left: 115px;
+   margin-bottom: 10px;
+   font-size: 35px;
+   text-align: center;
+   top: 100px;  
+   right: 35%;  
+   color: white;
+   text-shadow: 0px 0px 5px black;
+    margin-top: 0px; 
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+/*---------------- Form Contact ------------------- */
+
+.contact-form{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.contact-form input {
+    width: 40%;
+    padding: 8px opx;
+    margin: 8px 0px; 
+    display: block;
+}
+
+.contact-form h3{
+    margin-top: 40px;
+}
+
+#message{
+    height: 100px;
+}
+
+.contact-form button{
+    background-color: white;
+    border-radius: 20%;
+    border: none;
+    width: 110px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;   
+}
+
+.contact a {
+    margin: 40px;
+    text-align: center;
+}
+
+.contact p {
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+.contact img {
+    width: 60px;
+    height: 60px;
+}
+
+#face img{
+    width: 80px;
+    height: 80px;
+    margin-top: -20px;
+}
+
+#ifood img{
+    border-radius: 50%;
+}
+
+/* ----------- Form Produtos ----------- */
+
+.tipo-produtos button{
+    margin-top: 130px;
+    margin-left: -450px;
+    margin-right: 200px;
+    background: yellow;
+    font-size: 25px;
+    color: black;
+   width: 100px;
+    height: 270px;
+    display: block;
+}
+
+.tipo-produtos {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 150px; */
+    margin-left: 40px;
+    
+}
+
+.tipo-produtos p {
+     margin-top: -20px; 
+     margin-left: 100px;
+    font-size: 35px;
+}
+
+.tipo-produtos img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+     margin: 30px;
+    border-radius: 10%;
+    border: 5px solid black;
+    background: #754ec5; 
+    margin-top: 150px;
+}
+
+#linha1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+}
+
+.combos button{
+     margin-top: 30px;
+/*    margin-left: -200px;
+    margin-right: 200px; */
+    background: yellow;
+    font-size: 25px;
+    color: black;
+   width: 100px;
+    height: 270px;
+    display: block;
+}
+
+.combos{
+    display: flex;
+}
+
+.combo1{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.combo2{
+    font-size: 30px;
+    margin-left: 150px;
+}
+
+/* #linha2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+} */
+
+.roleta button{
+    margin-top: 30px;
+/*    margin-left: -200px;
+   margin-right: 200px; */
+   background: yellow;
+   font-size: 25px;
+   color: black;
+  width: 100px;
+   height: 270px;
+   display: block;
+}
+
+.roleta{
+    display: flex;
+}
+
+.roleta1{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.roleta2{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+
+.cardapio button{
+    margin-top: 30px;
+/*    margin-left: -200px;
+   margin-right: 200px; */
+   background: yellow;
+   font-size: 25px;
+   color: black;
+  width: 100px;
+   height: 270px;
+   display: block;
+}
+
+.cardapio-l1{
+    display: flex;
+}
+
+.cardapio1{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.cardapio2{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.cardapio3{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.cardapio-l2{
+    display: flex;
+}
+
+.cardapio4{
+    margin-top: 80px;
+    font-size: 25px;
+    margin-left: 140px;
+}
+
+.cardapio5{
+    margin-top: 80px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+.cardapio6{
+    margin-top: 80px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.cardapio-l3{
+    display: flex;
+}
+
+.cardapio7{
+    margin-top: 90px;
+    font-size: 25px;
+    margin-left: 140px;
+}
+
+.cardapio8{
+    margin-top: 90px;
+    font-size: 25px;
+    margin-left: 130px;
+}
+.cardapio9{
+    margin-top: 90px;
+    font-size: 25px;
+    margin-left: 300px;
+}
+
+.adicionais button{
+    margin-top: 30px;
+/*    margin-left: -200px;
+   margin-right: 200px; */
+   background: yellow;
+   font-size: 25px;
+   color: black;
+  width: 100px;
+   height: 330px;
+   display: block;
+}
+
+.adicionais{
+    display: flex;
+}
+
+.adicionais-l1{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.adicionais-l2{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 140px;
+}
+
+.adicionais-l3{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 130px;
+}
+
+/*--------------------Form Thanks-----------------*/
+
+.thanks{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+

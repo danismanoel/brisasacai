@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisas Açai</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img width="200px" height="200px" src="./img/logoacai.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">INICIAL</a>
+                </li>
+                <li>
+                    <a href="produtos.html">PRODUTOS</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="nome">
+        <h1>Brisa's Açai</h1>
+    </header>
+    <main class="contact">          
+        <!-- Target = indica que quando clicar vai para outra aba -->
+        <!-- Rel = ajuda quanto o google achar o site como em questão de segurança -->
+        <a href="https://www.instagram.com/brisasacai/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/insta.svg">
+            <p>Instagram</p>
+        </a>
+        <a id="face" href="https://www.facebook.com/people/brisasacai/100064985319387/?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+            <img src="./img/face.svg">
+            <p>Facebook</p>
+        </a>
+        <a href="https://wa.me/5547999375161/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/whatsapp.svg">
+            <p>Whatsapp</p>
+        </a>
+        <a id="ifood" href="https://www.ifood.com.br/delivery/itajai-sc/brisas-acai-sao-vicente/01b3b197-1a05-4175-a932-fa70dcd9e21a?UTM_Medium=sharehttps%3A%2F%2Fwa.me%2Fmessage%2FYF5WNFLKPVR2B1" target="_blank" rel="noopener noreferrer">
+            <img src="./img/ifood.png">
+            <p>Ifood</p>
+        </a>
+    </main>
+    <form class="contact-form" action="https://formsubmit.co/2de16524b6849488bc8eb0ea1963d921" method="POST">
+        <h3> Para entrar em contato voce pode tambem enviar um e-mail nos campos abaixo.</h3><br>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required>
+        </div><br>
+        <div>
+            <label for="fone">Telefone:</label>
+            <input type="number" name="fone" id="fone" required>
+        </div><br>
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required>
+        </div><br>
+        <div>
+            <label for="message">Mensagem</label>
+            <input type="text" name="message" id="message" required>
+        </div><br>
+        <button type="submit"><strong>Enviar</strong></button>
+        <!-- input hidden para pagina de agradecimento abrir depois que enviar o email -->
+        <input type="hidden" name="_next" value="thanks.html">
+        <input type="hidden" name="_subject" value="New submission">
+   </form> 
+
+    <footer>
+        <p>Brisa's Açai - Desde 2020 / Desenvolvimento: Daniellysmanoel</p>
+    </footer>
+</body>
+</html>
